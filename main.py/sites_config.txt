@@ -1,0 +1,23 @@
+# CONFIGURAÇÃO DE SITES PARA SCRAPING
+# Formato: nome_do_site|url_base|url_busca|ativo(sim/nao)|usa_selenium(sim/nao)
+# Linhas que começam com # são comentários
+
+# Sites Principais de Reclamações
+reclame_aqui|https://www.reclameaqui.com.br|https://www.reclameaqui.com.br/busca|sim|sim
+consumidor_gov|https://www.consumidor.gov.br|https://www.consumidor.gov.br/pages/indicador/pesquisar|sim|nao
+ebit|https://www.ebit.com.br|https://www.ebit.com.br/reclamacoes|sim|nao
+
+# Sites Internacionais
+trustpilot|https://www.trustpilot.com|https://www.trustpilot.com/categories/technology|sim|sim
+complaints_board|https://www.complaintsboard.com|https://www.complaintsboard.com/categories/technology|sim|nao
+sitejabber|https://www.sitejabber.com|https://www.sitejabber.com/categories/technology|sim|nao
+
+# Sites Adicionais (desabilitados por padrão)
+# glassdoor|https://www.glassdoor.com|https://www.glassdoor.com/Reviews|nao|nao
+# indeed|https://www.indeed.com|https://www.indeed.com/companies|nao|nao
+
+# INSTRUÇÕES:
+# - Para adicionar um novo site, adicione uma linha no formato acima
+# - Para desabilitar um site, mude "sim" para "nao" na coluna ativo
+# - Sites com JavaScript dinâmico precisam de usa_selenium=sim
+# - Salve o arquivo após fazer alterações
